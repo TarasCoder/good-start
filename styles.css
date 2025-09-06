@@ -527,6 +527,7 @@ footer {
   .floating-call {
     display: inline-block;
     animation: pulseInterval 3.5s ease-in-out infinite;
+    border: 2px solid #fff;
   }
 }
 /* Animation */
