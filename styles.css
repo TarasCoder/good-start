@@ -45,10 +45,11 @@ body {
   line-height: 1.6;
 
   /* базовий фон + SVG */
-  background: var(--bg)
+  background: var(--bg);
+  /* background: var(--bg)
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='1200'><circle cx='200' cy='200' r='80' fill='%23ff99cc' opacity='0.20'/><circle cx='400' cy='600' r='60' fill='%23ffcc00' opacity='0.20'/><circle cx='800' cy='300' r='100' fill='%2333cc99' opacity='0.20'/><circle cx='1200' cy='500' r='90' fill='%233366ff' opacity='0.20'/><circle cx='1000' cy='900' r='70' fill='%239966cc' opacity='0.20'/><circle cx='600' cy='1000' r='50' fill='%23ffffff' opacity='0.12'/><circle cx='1400' cy='300' r='75' fill='%23ff99cc' opacity='0.18'/><circle cx='300' cy='900' r='65' fill='%23ffcc00' opacity='0.18'/><circle cx='700' cy='700' r='85' fill='%2333cc99' opacity='0.18'/><circle cx='1300' cy='800' r='95' fill='%233366ff' opacity='0.18'/></svg>")
-    no-repeat center center fixed;
-  background-size: cover;
+    no-repeat center center fixed; */
+  /* background-size: cover; */
   min-width: 385px;
 }
 
@@ -699,10 +700,11 @@ footer {
   body {
     color: var(--text);
     /* зберігаємо SVG фон */
-    background: var(--bg)
+    background: var(--bg);
+    /* background: var(--bg)
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='1200'><circle cx='200' cy='200' r='80' fill='%23ff99cc' opacity='0.20'/><circle cx='400' cy='600' r='60' fill='%23ffcc00' opacity='0.20'/><circle cx='800' cy='300' r='100' fill='%2333cc99' opacity='0.20'/><circle cx='1200' cy='500' r='90' fill='%233366ff' opacity='0.20'/><circle cx='1000' cy='900' r='70' fill='%239966cc' opacity='0.20'/><circle cx='600' cy='1000' r='50' fill='%23ffffff' opacity='0.12'/><circle cx='1400' cy='300' r='75' fill='%23ff99cc' opacity='0.18'/><circle cx='300' cy='900' r='65' fill='%23ffcc00' opacity='0.18'/><circle cx='700' cy='700' r='85' fill='%2333cc99' opacity='0.18'/><circle cx='1300' cy='800' r='95' fill='%233366ff' opacity='0.18'/></svg>")
       no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover; */
   }
 
   /* кнопки */
