@@ -637,6 +637,9 @@ footer {
   .logo {
     display: none;
   }
+  .hero {
+    padding: 0 0 24px;
+  }
   .hidden_logo {
     display: block;
   }
