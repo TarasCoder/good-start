@@ -471,16 +471,14 @@ section {
   grid-template-columns: repeat(4, 1fr);
 }
 .gallery img {
-  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
   aspect-ratio: 4/3;
   object-fit: cover;
-}
-/* Gallery hover effect */
-.gallery img {
   border-radius: var(--radius);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+/* Gallery hover effect */
 .gallery img:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);

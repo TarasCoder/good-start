@@ -81,7 +81,10 @@
     <header>
       <div class="container nav">
         <a href="#top" class="logo" aria-label="Добрий старт — на головну">
-          <img src="./img/logo/logo.png" alt="Добрий старт — Дитячий простір" />
+          <picture>
+            <source srcset="./img/logo/logo.webp" type="image/webp" />
+            <img src="./img/logo/logo.png" alt="Добрий старт — Дитячий простір" />
+          </picture>
         </a>
         <nav class="nav-links" aria-label="Головне меню">
           <a href="#about">Про нас</a>
@@ -129,7 +132,10 @@
       </div>
     </header>
 
-    <img src="./img/logo/logo.png" alt="logo" class="hidden_logo">
+    <picture class="hidden_logo">
+      <source srcset="./img/logo/logo.webp" type="image/webp" />
+      <img src="./img/logo/logo.png" alt="logo" />
+    </picture>
 
     <main id="top">
       <!-- HERO -->
@@ -173,11 +179,14 @@
             </div>
           </div>
           <div>
-            <img
-              src="./img/img/0.jpg"
-              alt="Діти займаються творчістю у просторі Добрий старт"
-              loading="lazy"
-            />
+            <picture>
+              <source srcset="./img/img/0.webp" type="image/webp" />
+              <img
+                src="./img/img/0.jpg"
+                alt="Щасливі діти в Доброму старті"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -346,7 +355,7 @@
 
 
       <!-- GALLERY -->
-      <section id="gallery">
+      <!-- <section id="gallery">
         <div class="container">
           <h2 class="section-title">Галерея</h2>
           <p class="section-sub">
@@ -383,31 +392,94 @@
               margin-right: auto;
             "
           >
-            <!-- <div
+            <div
               style="
                 position: relative;
-                padding-bottom: 56.25%;
+                padding-bottom: 178%; /* зберігаємо вертикальне співвідношення */
                 height: 0;
                 overflow: hidden;
                 border-radius: 12px;
               "
             >
               <iframe
-                src="https://www.youtube.com/embed/ZT1K64_HdUQ?si=dDm06rLGPNdVtXEJ"
-                title="Відеопрезентація — Добрий старт"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FDobryjStart%2Fvideos%2F1224480016357273%2F&show_text=false&width=267&t=0"
                 style="
                   position: absolute;
                   top: 0;
                   left: 0;
                   width: 100%;
                   height: 100%;
+                  border: none;
+                  overflow: hidden;
                 "
-              ></iframe>
-            </div> -->
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section id="gallery">
+        <div class="container">
+          <h2 class="section-title">Галерея</h2>
+          <p class="section-sub">
+            Трохи наших моментів (можна замінити на ваші фото/відео).
+          </p>
+
+          <div class="gallery" aria-label="Фотогалерея">
+            <picture>
+              <source srcset="./img/img/4.webp" type="image/webp" />
+              <img src="./img/img/4.jpg" alt="Фото з заняття в Доброму старті" loading="lazy" decoding="async" />
+            </picture>
+
+            <picture>
+              <source srcset="./img/img/5.webp" type="image/webp" />
+              <img src="./img/img/5.jpg" alt="Фото з заняття в Доброму старті" loading="lazy" decoding="async" />
+            </picture>
+
+            <picture>
+              <source srcset="./img/img/6.webp" type="image/webp" />
+              <img src="./img/img/6.jpg" alt="Фото з заняття в Доброму старті" loading="lazy" decoding="async" />
+            </picture>
+
+            <picture>
+              <source srcset="./img/img/7.webp" type="image/webp" />
+              <img src="./img/img/7.jpg" alt="Фото з заняття в Доброму старті" loading="lazy" decoding="async" />
+            </picture>
+
+            <picture>
+              <source srcset="./img/img/2.webp" type="image/webp" />
+              <img src="./img/img/2.jpg" alt="Фото з заняття в Доброму старті" loading="lazy" decoding="async" />
+            </picture>
+
+            <picture>
+              <source srcset="./img/img/1.webp" type="image/webp" />
+              <img src="./img/img/1.jpg" alt="Фото з заняття в Доброму старті" loading="lazy" decoding="async" />
+            </picture>
+
+            <picture>
+              <source srcset="./img/img/8.webp" type="image/webp" />
+              <img src="./img/img/8.jpg" alt="Фото наші цінності" loading="lazy" decoding="async" />
+            </picture>
+
+            <picture>
+              <source srcset="./img/img/3.webp" type="image/webp" />
+              <img src="./img/img/3.jpg" alt="Фото з заняття в Доброму старті" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+
+          <div
+            class="card"
+            style="
+              margin-top: 16px;
+              max-width: 600px;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          >
             <div
               style="
                 position: relative;
