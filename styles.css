@@ -389,13 +389,38 @@ section {
 }
 
 /* Programs */
-.grid {
+/* .grid {
   display: grid;
   gap: 16px;
 }
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+.card h3 {
+  margin: 0 0 8px;
+} */
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+/* для 2 колонок */
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* для 3 колонок */
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -555,6 +580,9 @@ footer {
   .hero .wrap {
     grid-template-columns: 1fr;
   }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
   .grid-3 {
     grid-template-columns: 1fr 1fr;
   }
@@ -581,7 +609,12 @@ footer {
     margin-left: 10px;
   }
 } */
-/* @media (max-width: 640px) { */
+@media (max-width: 640px) {
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 875px) {
   .nav-links {
     display: none;
