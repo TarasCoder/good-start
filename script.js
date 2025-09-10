@@ -6,14 +6,6 @@ const CONFIG = {
   formEndpoint: "https://formsubmit.co/ajax/4kaskad@gmail.com",
 };
 
-// const hamburger = document.querySelector(".hamburger");
-// const mobileMenu = document.getElementById("mobile-menu");
-// hamburger?.addEventListener("click", () => {
-//   const isHidden = mobileMenu.hasAttribute("hidden");
-//   mobileMenu.toggleAttribute("hidden");
-//   hamburger.setAttribute("aria-expanded", String(isHidden));
-// });
-
 // ===== Hamburger menu =====
 const hamburger = document.querySelector(".hamburger");
 const mobileMenu = document.getElementById("mobile-menu");
@@ -96,64 +88,6 @@ function generateRandomBackground() {
   document.body.style.backgroundSize = "cover";
 }
 window.addEventListener("load", generateRandomBackground);
-
-// function generateRandomBackgroundCanvas() {
-//   const colors = ["#FFB347", "#FF7E5F", "#6A82FB", "#2B82C6", "#38BDF8", "#FACC15"];
-//   const circles = [];
-//   const numCircles = 20;
-//   const maxAttempts = 50;
-//   const width = window.innerWidth;
-//   const height = window.innerHeight;
-
-//   function isTooClose(x, y, r) {
-//     for (const c of circles) {
-//       const dx = c.cx - x;
-//       const dy = c.cy - y;
-//       const distance = Math.sqrt(dx * dx + dy * dy);
-//       if (distance < c.r + r + 10) return true;
-//     }
-//     return false;
-//   }
-
-//   for (let i = 0; i < numCircles; i++) {
-//     let attempts = 0;
-//     let cx, cy, r;
-//     do {
-//       cx = Math.floor(Math.random() * width);
-//       cy = Math.floor(Math.random() * height);
-//       r = Math.floor(Math.random() * 80) + 30;
-//       attempts++;
-//     } while (isTooClose(cx, cy, r) && attempts < maxAttempts);
-//     circles.push({
-//       cx, cy, r,
-//       fill: colors[Math.floor(Math.random() * colors.length)],
-//       opacity: Math.random() * 0.2 + 0.1
-//     });
-//   }
-
-//   // створюємо canvas
-//   const canvas = document.createElement("canvas");
-//   canvas.width = width;
-//   canvas.height = height;
-//   canvas.style.position = "fixed";
-//   canvas.style.top = 0;
-//   canvas.style.left = 0;
-//   canvas.style.width = "100%";
-//   canvas.style.height = "100%";
-//   canvas.style.zIndex = -1;
-//   canvas.style.pointerEvents = "none";
-//   document.body.appendChild(canvas);
-
-//   const ctx = canvas.getContext("2d");
-//   circles.forEach(c => {
-//     ctx.globalAlpha = c.opacity;
-//     ctx.fillStyle = c.fill;
-//     ctx.beginPath();
-//     ctx.arc(c.cx, c.cy, c.r, 0, 2 * Math.PI);
-//     ctx.fill();
-//   });
-
-// window.addEventListener("load", generateRandomBackgroundCanvas);
 
 // ====== Phone injection (в усі місця) ======
 const phoneEls = [

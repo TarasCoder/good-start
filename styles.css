@@ -28,16 +28,9 @@ body {
     sans-serif;
   color: var(--text);
   line-height: 1.6;
-
-  /* базовий фон + SVG */
   background: var(--bg);
-  /* background: var(--bg)
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='1200'><circle cx='200' cy='200' r='80' fill='%23ff99cc' opacity='0.20'/><circle cx='400' cy='600' r='60' fill='%23ffcc00' opacity='0.20'/><circle cx='800' cy='300' r='100' fill='%2333cc99' opacity='0.20'/><circle cx='1200' cy='500' r='90' fill='%233366ff' opacity='0.20'/><circle cx='1000' cy='900' r='70' fill='%239966cc' opacity='0.20'/><circle cx='600' cy='1000' r='50' fill='%23ffffff' opacity='0.12'/><circle cx='1400' cy='300' r='75' fill='%23ff99cc' opacity='0.18'/><circle cx='300' cy='900' r='65' fill='%23ffcc00' opacity='0.18'/><circle cx='700' cy='700' r='85' fill='%2333cc99' opacity='0.18'/><circle cx='1300' cy='800' r='95' fill='%233366ff' opacity='0.18'/></svg>")
-    no-repeat center center fixed; */
-  /* background-size: cover; */
   min-width: 385px;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -51,7 +44,6 @@ img {
   width: auto;
   display: block;
 }
-
 .logo {
   display: flex;
   align-items: center;
@@ -101,7 +93,6 @@ img {
   color: #0369a1;
   margin-bottom: 10px;
 }
-
 /* Header */
 header {
   position: sticky;
@@ -169,7 +160,6 @@ header {
 .hamburger.open::before {
   content: "✖";
 }
-
 /* Mobile menu */
 .mobile-menu {
   flex-direction: column;
@@ -177,28 +167,21 @@ header {
   padding: 10px 0;
   border-top: 1px solid var(--border);
 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-
-  /* For animation */
+  /* Для анімації */
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.8s ease, opacity 0.8s ease;
 }
-/* When active */
+/* Коли активне */
 .mobile-menu.open {
+  display: flex;
   max-height: 500px;
   opacity: 1;
 }
-.mobile-menu[hidden] {
-  display: none;
-}
-.mobile-menu:not([hidden]) {
-  display: flex;
-}
-
 /* Hero */
 .hero {
   padding: 48px 0 24px;
@@ -246,7 +229,6 @@ header {
   border-radius: 50%;
   background: var(--accent);
 }
-
 /* Sections */
 section {
   padding: 56px 0;
@@ -261,7 +243,6 @@ section {
   color: var(--muted);
   margin: 0 0 24px;
 }
-
 /* About */
 .about {
   max-width: var(--container);
@@ -286,16 +267,13 @@ section {
   display: grid;
   gap: 24px;
 }
-
 .about .wrap {
   grid-template-columns: 1fr 1fr;
 }
-
 .about h2.section-title {
   text-align: center;
   margin-bottom: 5px;
 }
-
 /* About Місія */
 .about-mission {
   text-align: center;
@@ -303,14 +281,12 @@ section {
   margin: 0 auto;
   padding: 12px 0;
 }
-
 .about-mission h3 {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 12px;
   color: var(--accent);
 }
-
 .about-mission ul {
   list-style: none;
   padding: 0;
@@ -318,7 +294,6 @@ section {
   max-width: 600px;
   text-align: left;
 }
-
 .about-mission li {
   display: flex;
   align-items: flex-start;
@@ -326,13 +301,11 @@ section {
   margin-bottom: 12px;
   font-size: 1.05rem;
 }
-
 .about-mission li::before {
   content: "✨";
   flex-shrink: 0;
   color: var(--accent-2);
 }
-
 /* About Пропозиції */
 .about-services {
   background: var(--card);
@@ -341,13 +314,11 @@ section {
   box-shadow: var(--shadow);
   padding: 24px;
 }
-
 .about-services h3 {
   margin-top: 0;
   margin-bottom: 16px;
   color: var(--accent);
 }
-
 .about-services ul {
   list-style: none;
   padding: 0;
@@ -355,12 +326,10 @@ section {
   display: grid;
   gap: 10px;
 }
-
 .about-services li {
   padding-left: 1.4em;
   position: relative;
 }
-
 .about-services li::before {
   content: "✔";
   position: absolute;
@@ -368,17 +337,14 @@ section {
   color: var(--accent);
   font-weight: bold;
 }
-
 /* About Переваги */
 .about-advantages {
   text-align: center;
 }
-
 .about-advantages h3 {
   margin-bottom: 16px;
   color: var(--accent);
 }
-
 .about-advantages ul {
   display: grid;
   gap: 12px;
@@ -388,7 +354,6 @@ section {
   list-style: none;
   max-width: 800px;
 }
-
 .about-advantages li {
   background: var(--card);
   border: 1px solid var(--border);
@@ -397,7 +362,6 @@ section {
   font-weight: 600;
   box-shadow: var(--shadow);
 }
-
 /* About Заклик */
 .about-cta {
   text-align: center;
@@ -406,23 +370,19 @@ section {
   margin-top: 20px;
   color: var(--text);
 }
-
 /* Programs */
 .grid {
   display: grid;
   gap: 16px;
 }
-
 /* для 2 колонок */
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);
 }
-
 /* для 3 колонок */
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
-
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -433,7 +393,6 @@ section {
 .card h3 {
   margin: 0 0 8px;
 }
-
 /* Gallery */
 .gallery {
   display: grid;
@@ -453,7 +412,6 @@ section {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
-
 /* Testimonials */
 .testimonials {
   display: grid;
@@ -479,7 +437,6 @@ section {
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent-2), var(--accent-3));
 }
-
 /* CTA / Form */
 .cta {
   background: linear-gradient(180deg, #f0fdf4, #ffffff);
@@ -528,7 +485,6 @@ label {
 .error {
   color: var(--danger);
 }
-
 /* Contact */
 .contact {
   display: grid;
@@ -541,7 +497,6 @@ label {
   height: 320px;
   border-radius: 12px;
 }
-
 /* Footer */
 footer {
   padding: 28px 0;
@@ -557,7 +512,6 @@ footer {
   display: inline-block;
   margin-right: 12px;
 }
-
 /* Floating phone button (mobile) */
 .floating-call {
   position: fixed;
@@ -566,7 +520,6 @@ footer {
   z-index: 50;
   display: none;
 }
-
 /* Universal class to make blocks looks better */
 .about-services,
 .hero-card,
@@ -636,26 +589,10 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* @media (max-width: 768px) {
-  .logo img {
-    height: 50px;
-  }
-  .nav {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .phone {
-    margin-left: 10px;
-  }
-} */
-@media (max-width: 640px) {
-  .grid-3,
-  .grid-2 {
-    grid-template-columns: 1fr;
-  }
-}
 @media (max-width: 875px) {
+  .nav {
+    padding-top: 35px;
+  }
   .nav-links {
     display: none;
   }
@@ -668,14 +605,8 @@ footer {
   }
   body {
     color: var(--text);
-    /* зберігаємо SVG фон */
     background: var(--bg);
-    /* background: var(--bg)
-      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='1200'><circle cx='200' cy='200' r='80' fill='%23ff99cc' opacity='0.20'/><circle cx='400' cy='600' r='60' fill='%23ffcc00' opacity='0.20'/><circle cx='800' cy='300' r='100' fill='%2333cc99' opacity='0.20'/><circle cx='1200' cy='500' r='90' fill='%233366ff' opacity='0.20'/><circle cx='1000' cy='900' r='70' fill='%239966cc' opacity='0.20'/><circle cx='600' cy='1000' r='50' fill='%23ffffff' opacity='0.12'/><circle cx='1400' cy='300' r='75' fill='%23ff99cc' opacity='0.18'/><circle cx='300' cy='900' r='65' fill='%23ffcc00' opacity='0.18'/><circle cx='700' cy='700' r='85' fill='%2333cc99' opacity='0.18'/><circle cx='1300' cy='800' r='95' fill='%233366ff' opacity='0.18'/></svg>")
-      no-repeat center center fixed;
-    background-size: cover; */
   }
-
   /* кнопки */
   .btn-primary {
     background: var(--accent);
@@ -694,17 +625,14 @@ footer {
     background: var(--accent-4);
     color: #fff;
   }
-
   /* списки */
   .list .dot {
     background: var(--accent-2);
   }
-
   /* аватари */
   .avatar {
     background: linear-gradient(135deg, var(--accent-3), var(--accent-2));
   }
-
   /* заголовки */
   .section-title,
   h1,
@@ -722,7 +650,6 @@ footer {
   a:hover {
     color: var(--accent-2);
   }
-
   /* картки */
   .card {
     background: var(--card);
@@ -732,6 +659,9 @@ footer {
   }
   .mobile-menu {
     display: flex;
+  }
+  .mobile-menu.open {
+    max-height: none;
   }
   .headline {
     font-size: 34px;
@@ -752,6 +682,12 @@ footer {
     border: 2px solid #fff;
   }
 }
+@media (max-width: 640px) {
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
 /* Button Animation */
 @keyframes pulseInterval {
   0% {
@@ -767,7 +703,6 @@ footer {
     transform: scale(1);
   }
 }
-
 .free_sign_btn {
   display: inline-block;
   animation: pulseInterval 3.5s ease-in-out infinite;
@@ -778,20 +713,16 @@ footer {
     gap: 30px;
     padding: 15px;
   }
-
   .about-mission h3 {
     font-size: 1.4rem;
   }
-
   .about-services {
     padding: 18px;
   }
-
   .about-advantages ul {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
-
 /* About Телефони */
 @media (max-width: 480px) {
   .about {
