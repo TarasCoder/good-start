@@ -13,21 +13,6 @@
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
   --container: 1200px;
 }
-/* :root {
-  --bg: #F5FAFF;
-  --text: #333333;
-  --muted: #667085;
-  --accent: #2E4A9C;
-  --accent-2: #FFD633;
-  --accent-3: #F06CA2; 
-  --accent-4: #77B82A;
-  --card: #F2F2F2; 
-  --border: #E5E7EB;
-  --danger: #EF4444;
-  --radius: 16px;
-  --shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  --container: 1200px;
-} */
 *,
 *::before,
 *::after {
@@ -184,12 +169,7 @@ header {
 .hamburger.open::before {
   content: "✖";
 }
-.mobile-menu[hidden] {
-  display: none;
-}
-.mobile-menu:not([hidden]) {
-  display: flex;
-}
+
 /* Mobile menu */
 .mobile-menu {
   flex-direction: column;
@@ -211,6 +191,12 @@ header {
 .mobile-menu.open {
   max-height: 500px;
   opacity: 1;
+}
+.mobile-menu[hidden] {
+  display: none;
+}
+.mobile-menu:not([hidden]) {
+  display: flex;
 }
 
 /* Hero */
@@ -422,23 +408,6 @@ section {
 }
 
 /* Programs */
-/* .grid {
-  display: grid;
-  gap: 16px;
-}
-.grid-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-.card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px;
-  box-shadow: var(--shadow);
-}
-.card h3 {
-  margin: 0 0 8px;
-} */
 .grid {
   display: grid;
   gap: 16px;
