@@ -83,65 +83,6 @@ function generateRandomBackground() {
 window.addEventListener("load", generateRandomBackground);
 window.addEventListener("resize", generateRandomBackground);
 
-// function generateRandomBackground() {
-//   const colors = [
-//     "#FFB347",
-//     "#FF7E5F",
-//     "#6A82FB",
-//     "#2B82C6",
-//     "#38BDF8",
-//     "#FACC15",
-//   ];
-//   const circles = [];
-//   const numCircles = 30; // balls quantity
-//   const maxAttempts = 50; // max attemps to avoid overlay
-//   const width = 1600;
-//   const height = 1200;
-//   function isTooClose(x, y, r) {
-//     for (const c of circles) {
-//       const dx = c.cx - x;
-//       const dy = c.cy - y;
-//       const distance = Math.sqrt(dx * dx + dy * dy);
-//       if (distance < c.r + r + 10) {
-//         // +10 for additional space
-//         return true;
-//       }
-//     }
-//     return false;
-//   }
-//   for (let i = 0; i < numCircles; i++) {
-//     let attempts = 0;
-//     let cx, cy, r;
-//     do {
-//       cx = Math.floor(Math.random() * width);
-//       cy = Math.floor(Math.random() * height);
-//       r = Math.floor(Math.random() * 80) + 30; // radius 30-110
-//       attempts++;
-//     } while (isTooClose(cx, cy, r) && attempts < maxAttempts);
-//     circles.push({
-//       cx,
-//       cy,
-//       r,
-//       fill: colors[Math.floor(Math.random() * colors.length)],
-//       opacity: (Math.random() * 0.2 + 0.1).toFixed(2),
-//     });
-//   }
-//   const svg =
-//     `<svg xmlns='http://www.w3.org/2000/svg' width='${width}' height='${height}'>` +
-//     circles
-//       .map(
-//         (c) =>
-//           `<circle cx='${c.cx}' cy='${c.cy}' r='${c.r}' fill='${c.fill}' opacity='${c.opacity}'/>`
-//       )
-//       .join("") +
-//     `</svg>`;
-//   document.body.style.background = `url("data:image/svg+xml;utf8,${encodeURIComponent(
-//     svg
-//   )}") no-repeat center center fixed`;
-//   document.body.style.backgroundSize = "cover";
-// }
-// window.addEventListener("load", generateRandomBackground);
-
 // ====== Phone injection (в усі місця) ======
 const phoneEls = [
   document.getElementById("phoneLink"),

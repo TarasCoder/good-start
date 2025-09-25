@@ -544,6 +544,12 @@ footer {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* підсилюємо тінь */
 }
 
+.grid.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* відстань між блоками */
+}
+
 /* Responsive */
 @media (max-width: 1250px) {
   .nav {
@@ -555,6 +561,9 @@ footer {
   }
 }
 @media (max-width: 980px) {
+  .grid.grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .logo {
     display: none;
   }
@@ -683,6 +692,9 @@ footer {
   }
 }
 @media (max-width: 640px) {
+  .grid.grid-3 {
+    grid-template-columns: 1fr;
+  }
   .grid-3,
   .grid-2 {
     grid-template-columns: 1fr;
