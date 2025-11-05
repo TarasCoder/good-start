@@ -54,6 +54,10 @@ img {
   margin: 0 auto;
   width: 200px;
 }
+.sub_header {
+  font-size: 18px;
+  margin: 0;
+}
 .container {
   max-width: var(--container);
   margin: 0 auto;
@@ -281,7 +285,8 @@ section {
   margin: 0 auto;
   padding: 12px 0;
 }
-.about-mission h3 {
+.about-mission h3,
+.about-advantages h3 {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 12px;
@@ -301,11 +306,11 @@ section {
   margin-bottom: 12px;
   font-size: 1.05rem;
 }
-.about-mission li::before {
+/* .about-mission li::before {
   content: "✨";
   flex-shrink: 0;
   color: var(--accent-2);
-}
+} */
 /* About Пропозиції */
 .about-services {
   background: var(--card);
@@ -498,7 +503,8 @@ label {
   border-radius: 12px;
 }
 /* Footer */
-footer {
+
+/* footer {
   padding: 28px 0;
   border-top: 1px solid var(--border);
   color: var(--muted);
@@ -511,7 +517,39 @@ footer {
 .social a {
   display: inline-block;
   margin-right: 12px;
+} */
+footer {
+  padding: 28px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
 }
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  text-align: right;
+}
+
+.hint {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+
 /* Floating phone button (mobile) */
 .floating-call {
   position: fixed;
